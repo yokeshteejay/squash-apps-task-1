@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mediaquery.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -26,20 +34,21 @@
                   </li>
         
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link active" aria-current="page" href="./about.html">About</a>
                   </li>
         
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Service</a>
+                    <a class="nav-link active" aria-current="page" href="./service.html">Service</a>
                   </li>
         
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                    <a class="nav-link active" aria-current="page" href="./blogs.html">Blogs</a>
                   </li>
         
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Pages</a>
+                    <a class="nav-link active" aria-current="page" href="./pages.html">Pages</a>
                   </li>
+               
                   </ul>
                   <button type="button" class="btn btn-warning">Contact Us</button>
               </div>
@@ -47,111 +56,134 @@
           </nav>
         </header>
 
-        <section class="content" >
+        <section class="content " >
           <!-- <img src="./Image.png" class="image1"/> -->
           <div class="container">
              <div class="row">
-              <h3><img src="Vector.png"> We Provide Electric Services For Industrial Project</h3>
-              <h2>Build your Dream home</h2>
-              <p>Cras ac sapien eget ante faucibus tempus et eu tortor. Integer iaculis ultrices velit nec tempor.<br> Pellentesque aliquet est massa, sit amet tempor mi auctor nec. Mauris a nibh sed libero fermentum aliquet.<br> Quisque sit amet faucibus magna. Donec purus mi, commodo id commodo vel, imperdiet ut mauris. Ut ultricies arcu risus,</p>
+              <h3 data-aos="zoom-in-up" data-aos-duration="3000"><img src="Vector.png"> We Provide Electric Services For Industrial Project</h3>
+              <h2 data-aos="zoom-in-up" data-aos-duration="3000">Build your Dream home</h2>
+              <p data-aos="zoom-in-up" data-aos-duration="3000">Cras ac sapien eget ante faucibus tempus et eu tortor. Integer iaculis ultrices velit nec tempor.<br> Pellentesque aliquet est massa, sit amet tempor mi auctor nec. Mauris a nibh sed libero fermentum aliquet.<br> Quisque sit amet faucibus magna. Donec purus mi, commodo id commodo vel, imperdiet ut mauris. Ut ultricies arcu risus,</p>
              </div>
-             <button>
-             <img src="./button.png">
-             </button>
+             <button  data-aos="zoom-in-up" data-aos-duration="3000" id="button1" class="btn btn-warning">
+              Contact US 
+              </button>
           
           </div>
-        </section><br><br>
+        </section><br>
 
-       <section class="content1">
-        <div class="row">
-
-          <div class="col" id="subcontent1" ><img src="./men1.png"></div>
-          <div class="col" id="subcontent2">
-            <button><img src="./Sub Title.png"></button><br><br>
-            <h1>We Provide Your Future</h1><br>
-            <p> Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. <br>Proin pretium id urna sit amet tincidunt. Interdum et malesuada. <br>
-
-              In pulvinar viverra diam, nec rutrum mauris maximus non. Aenean sed quam tristique,<br> facilisis est ac, interdum velit.</p>
-
-              <img src="./Experiance.png" class="img2">
-              <ul class="list">
-                <li>- Sed varius ipsum lacus</li>
-                <li>- Pulvinar tortor dignissim sit amet.</li>
-                <li>- Quisque tristique diam quis placerat</li>
-                <li>- Aliquam id ante suscipi fringilla</li>
-              </ul>
-          </div>
-          
-
-        </div>
-       </section><br>
-
-
-       <section id="back1">
+        
+     <section class="welcome-to-sec">
         <div class="container">
-          <div class="row">
-            <div class="col" id="img3">
-             <ul id="back2">
-              <li>Project Done</li>
-              <li>People Working</li>
-              <li>Business Partner</li>
-              <li>Customers</li>
-             </ul>
+            <div class="row">
+                   <div class="col-xl-5 col col-lg-6">
+                    <div class="welcome-to-main-img">
+                       <img src="./men1.png" alt="">
+                    </div>
+                   </div>
+                   <div class="col-xl-7 col-lg-6">
+                    <div class="welcome-to-content-box">
+                       <span class="Welcome-to-mini-tit">
+                          <img src="./Icon (2).svg"><p>Welcome To</p>
+                       </span>
 
-             <ul id="back3">
-              <li><span>3956</span></li>
-              <li><span>851</span></li>
-              <li><span>265</span></li>
-              <li><span>854+</span></li>
+                       <h2 class="welcome-main-tit" id="we-provide">
+                        We Provide Your Future
+                       </h2>
 
-             </ul>
+                       <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada. </p>
 
+                       <p>
+                        In pulvinar viverra diam, nec rutrum mauris maximus non. Aenean sed quam tristique, facilisis est ac, interdum velit.</p>
+
+                        <div class="Years-Of-Experiance">
+                            <div class="years">
+                                <div class="year-of-number">
+                                    35
+                                </div>
+
+                                <h4>Years Of 
+                                    Experiance</h4>
+                            </div>
+
+                            <div class="Years-Of-Experiance-cont">
+                                <p>- Sed varius ipsum lacus</p>
+                                <p>- Pulvinar tortor dignissim sit amet.</p>
+                                <p>- Quisque tristique diam quis placerat</p>
+                                <p>- Aliquam id ante suscipi fringilla.</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
             </div>
-            <div class="col" id="para" >
-              <div id="para1">
-              <button><img src="./Sub Title.png"></button><br><br>
-              <h2>Few Reasons Why You Should Choose Us</h2><br>
-              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada. </p>
-               <div>
-                <h3><img src="./Icon.svg">35 Years Experience </h3>
-                <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi.<br> In sed pretium </p>
-              </div>
-              
-              <div>
-                <h3><img src="./Icon.svg">35 Years Experience </h3>
-                <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi.<br> In sed pretium </p>
-              </div>
-              <div>
-                <h3><img src="./Icon.svg">35 Years Experience </h3>
-                <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi.<br> In sed pretium </p>
-              </div>
-            </div>
-          </div>
-
-          </div>
-        </div><br>
-       </section><br><br>
-
-       <section>
-        <div class="container">
-          <div class="row">
-            <div id="para2">
-              <h3><img src="./logo1.png"> Our Services</h3>
-              <h1>How We Works</h1>
-              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
-
-            </div>
-
-          </div>
-
         </div>
+     </section>
 
-       </section>
+
+      
+     <section class="why-choose-us-sec">
+      <div class="container">
+          <div class="row ">
+              <div class="col-xl-6 col-lg-6">
+                  <div class="why-choose-us-projects">
+                  <ul class="projects-people-business-card">
+                      <li><span>3956</span><div>Nunito Sans</div></li>
+                      <li><span>851</span><div>People Working</div></li>
+                      <li><span>265</span><div>Business Partner</div></li>
+                      <li><span>854+</span><div>Happy Customers</div></li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="why-choose-us-cont">
+                  <div class="why-choose-us-cont-card">
+                      <span class="why-chose-mini-tit">
+                        <img src="./logo1.png"><p>Why Choose Us</p>
+                        
+                      </span>
+  
+                      <h1 class="why-chose-us-main-tit">
+                          Few Reasons Why You Should Choose Us
+                      </h1>
+  
+                      <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada. </p>
+                    </div>
+  
+                    <ul class="expreriance-excelence-affodoble ">
+                     <li> <h4>35 Years Experience</h4>
+                      <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium </p>
+                     </li>
+                     <li><h4>Excellence Certificate</h4>
+                      <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium </p>
+                     </li>
+                     <li><h4>Affordable Price</h4>
+                      <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium </p>
+                     </li>
+                    </ul>
+
+                  
+                     
+                  </div>
+                </div>
+          </div>
+      </div>
+   </section>
 
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div id="para2">
+              <div class="para2-img">
+
+                  <img src="./logo1.png"><p>Our service
+                  </p>
+              </div>
+              <h1>How We Works</h1><br>
+              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
+
+            </div><br><br>
+            <div class="col-xl-4 col-lg-6">
+
+              
               <div id="air">
                 <img src="./Air Conditioner.png" style="height: 60px;">
                 <h3>Air condition service </h3>
@@ -168,7 +200,7 @@
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xl-4 col-lg-6">
             <div id="Electrical">
               <img src="./Substation.png" style="height: 60px;">
               <h3>Electrical installation</h3>
@@ -186,7 +218,7 @@
         </div>
 
 
-        <div class="col-md-4">
+        <div class="col-xl-4 col-lg-6">
           <div id="build">
             <img src="./Icon (1).png">
             <h3>General Builder</h3>
@@ -204,15 +236,19 @@
             </div>
 
         </div>
-      </section><br><br>
+      </section><br>
 
       <section class="grandparent">
         <div class="container">
           <div class="row">
             
             <div id="para2">
-              <h3><img src="./logo1.png"> Our Services</h3>
-              <h1>How We Works</h1>
+              <div class="para2-img1">
+
+                <img src="./logo1.png"><p>Our Blog
+                </p>
+            </div>
+              <h1>Latest News and Articles</h1><br>
               <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
 
             </div>
@@ -227,39 +263,45 @@
      <section class="grandparent1">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-xl-4 col-lg-6">
            
             <div id="parent">
               <img src="./human1.png" id="human1">
               <span id="vect"><img src="./vect.png">John Kennis</span>
               <span id="vect1"> <img src="./vect1.png">April 2, 2022</span>
-              <h3>Understanding Your Home’s<br> Electrical Capacity</h3><br>
-              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p><br><br>
-              <button>Read More</button>
+              <h3>Understanding Your Home’s<br> Electrical Capacity</h3>
+              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p>
+              <center>
+              <button id="button1">Read More</button>
+              </center>
             </div>
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xl-4 col-lg-6">
             <div id="parent">
-              <img src="./human2.png" id="human1">
+              <img src="./human2.png" id="human1" style="height: 247px;">
               <span id="vect"><img src="./vect.png">John Kennis</span>
               <span id="vect1"> <img src="./vect1.png">April 2, 2022</span>
-              <h3>Understanding Your Home’s<br> Electrical Capacity</h3><br>
-              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p><br><br>
+              <h3>Understanding Your Home’s<br> Electrical Capacity</h3>
+              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p>
+              <center>
               <button>Read More</button>
+              </center>
             </div>
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xl-4 col-lg-6">
             <div id="parent">
-              <img src="./human3.png" id="human1">
+              <img src="./human3.png" id="human1" style="height: 247px;">
               <span id="vect"><img src="./vect.png">John Kennis</span>
               <span id="vect1"> <img src="./vect1.png">April 2, 2022</span>
-              <h3>Understanding Your Home’s<br> Electrical Capacity</h3><br>
-              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p><br><br>
-              <button>Read More</button>
+              <h3>Understanding Your Home’s<br> Electrical Capacity</h3>
+              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p>
+              <center>
+              <button >Read More</button>
+              </center>
             </div>
 
           </div>
@@ -267,7 +309,7 @@
         </div>
 
       </div>
-     </section><br><br>
+     </section>
 
      
      <section>
@@ -275,8 +317,8 @@
         <div class="row">
           
           <div id="para2">
-            <h3><img src="./logo1.png"> Our Services</h3>
-            <h1>How We Works</h1>
+            <h3><img src="./logo1.png"> Our Team</h3><br>
+            <h1>Meet Our Team</h1><br>
             <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
           </div>
         </div>
@@ -288,7 +330,7 @@
         <div class="container">
           <div class="row">
              
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
               <div id="parent1">
               <img src="./person1.png">
               <h1>David James</h1>
@@ -297,7 +339,7 @@
             
             </div>
 
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
               <div id="parent1">
               <img src="./person2.png">
               <h1>Hinata Hyuga</h1>
@@ -305,7 +347,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-xl-4 col-lg-6">
               <div id="parent1">
                <img src="./person3.png">
                <h1>Sarrah Albert</h1>
@@ -314,44 +356,35 @@
             </div>
           </div>
         </div>
-      </section><br>
+      </section>
 
       <section>
         <div class="container">
           <div class="row">
             
             <div id="para2">
-              <h3><img src="./logo1.png"> Subscriptions</h3>
-              <h1>Let’s Customize Work With Affordable Price</h1>
+              <h3><img src="./logo1.png"> Subscriptions</h3><br>
+              <h1>Let’s Customize Work With Affordable Price</h1><br>
               <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
             </div>
           </div>
         </div>
   
-        </section><br>
+        </section>
 
        
-        <section class="pricing-sec">
+        <section class="pricing">
           <div class="container">
-              <div class="Subscrip-tit-wraper">
-                  <span class="Subscrip-mini-tit">
-                      Subscriptions
-                  </span>
-          
-                  <h3 class="Subscrip-main-tit">
-                      Let’s Customize Work With Affordable Price
-                  </h3>
-          
-                  <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
-      
-              </div>
+              
               <div class="row align-items-center">
                   <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div id="hover1">
                       <div class="basic-nd-standard-plan-card">
-                          <div class="tit-nd-price">
+                          <div class="price">
                               <div>
-                                  <h4 class="pricing-tit">Basic Plan</h4>
-                              <span>$ 599.00</span>
+                                  <h4 class="pricing1">Basic Plan</h4>
+                              <span>$ 599.00</span><br>
+                              <p>________________________________________</p>
                               </div>
   
                               <p>Per Visit Charge</p>
@@ -366,12 +399,13 @@
                               <li><img src="./Icon.png">Generator Installations</li>
                           </ul>
   
-                          <a href="#" class="buy-now-btn">
+                          <p class="buy-now-btn">
                               Buy Now
-                          </a>
+                          </p>
+                      </div>
                       </div>
                   </div>
-                  <div class="col-xl-4 col-lg-6 col-md-12">
+                  <div class="col-xl-4 col-lg-6 col-md-12" >
                       <div class="primium-plan-card">
                           <div class="tit-nd-price">
                               <div>
@@ -391,9 +425,9 @@
                               <li><img src="./Icon.png">Generator Installations</li>
                           </ul>
   
-                          <a href="#" class="buy-now-btn">
+                          <p class="buy-now-btn">
                               Buy Now
-                          </a>
+                          </p>
                       </div>
                   </div>
                   <div class="col-xl-4 col-lg-6 col-md-12">
@@ -416,17 +450,202 @@
                               <li><img src="./Icon.png">Air Conditioning Units</li>
                           </ul>
   
-                          <a href="#" class="buy-now-btn">
+                          <p class="buy-now-btn">
                               Buy Now
-                          </a>
+                          </p>
                       </div>
                   </div>
               </div>
           </div> 
        </section>
 
+       
+      <section>
+        <div class="container">
+          <div class="row">
+            
+            <div id="para2">
+              <h3><img src="./logo1.png"> Subscriptions</h3><br>
+              <h1>Let’s Customize Work With Affordable Price</h1><br>
+              <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
+            </div>
+          </div>
+        </div>
+  
+        </section>
+
+       <section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards">
+                  <div class="img">
+                      <img src="Rectangle 3473 (1).png" />
+                  </div>
+                 <div  class="testimonal-sub">
+                  <h3 class="h3">Cody Fisher</h3>
+                  <h6 style="color:  rgba(193, 0, 35, 1);">Marketing Coordinator</h6>
+                  <div class="star">
+                      <img src="images/Rateing.png" alt="" >
+                  </div>
+                  <p >Blandit volutpat maeceganas volutpat blandit mobi</p>
+                  <p >tincidunt ornare massa eget eghbgestas purus vivera</p>
+                  <p >fermentum et.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                  <div class="img">
+                      <img src="./Rectangle 3473.png"/>
+                  </div>
+                  <div  class="testimonal-sub">
+                  <h3 class="h3">Cody Fisher</h3>
+                  <h6 style="color:  rgba(193, 0, 35, 1);">Marketing Coordinator</h6>
+                  <div class="star">
+                      <img src="images/Rateing.png" alt="" >
+                  </div>
+                  <p >Blandit volutpat maeceganas volutpat blandit mobi</p>
+                  <p >tincidunt ornare massa eget eghbgestas purus vivera</p>
+                  <p >fermentum et.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                  <div class="img">
+                      <img src="./Rectangle 3473 (2).png" />
+                  </div>
+                  <div class="testimonal-sub">
+                  <h3 class="h3">Cody Fisher</h3>
+                  <h6 style="color:  rgba(193, 0, 35, 1);">Marketing Coordinator</h6>
+                  <div class="star">
+                      <img src="images/Rateing.png" alt="" >
+                  </div>
+                  <p >Blandit volutpat maeceganas volutpat blandit mobi</p>
+                  <p >tincidunt ornare massa eget eghbgestas purus vivera</p>
+                  <p >fermentum et.</p>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+  </div>
+        
+       </section>
+       
+
+       
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="footer-logo-social">
+                        <div class="footer-logo">
+                            <img src="./skylogo.png" alt="">
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur a odit aut fugit sed consequuntur magni dolores eos qui ratione.</p>
+
+                        <div class="footer-social-mdia-link">
+                            <img src="./Group 8907.png" alt="">
+                            <img src="./Group 8908.png" alt="">
+                            <img src="./Group 8909.png" alt="">
+                            <img src="./Group 8910.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-12" >
+                    <div class="footer-contant">
+                        <h4 class="f-conatnt-tit">
+                            Contact
+                        </h4>
+                        <ul class="f-contact-checks">
+                            <li>(629) 555-0129</li>
+                            <li>info@example.com</li>
+                            <li>6391 Elgin St.Celina, 10299</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+                    <div class="footer-pages">
+                        <h4 class="f-pages-tit">
+                            Page
+                        </h4>
+                        <ul class="f-pages-check">
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Blogs</li>
+                            <li>Service</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-4 col-12">
+                    <div class="quick-link">
+                        <h4 class="f-quick-link-tit">
+                            Quick links
+                        </h4>
+                        <ul class="f-quick-link-checks">
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>FAQs</li>
+                            <li>Support Center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="f-subcribe">
+                        <h4 class="f-subscribe-tit">
+                            Subscribe
+                        </h4>
+                     
+                         <div class="f-sub-form">
+                            <input type="text"  placeholder="Get product updates" >
+                         </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+          
+          <center>  
+        <div class="copy-rights">
+            <p>© 2024 Copyright , All rights reserved.</p>
+        </div>
+        </center>
+        </div>
+     </footer>
+
+
+
 
        </div>
+      
 
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    
 </body>
 </html>

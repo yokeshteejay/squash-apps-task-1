@@ -1,0 +1,129 @@
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-wrap: wrap;          
+        column-gap: 20px;        
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+        width: 95%;
+        top: 0;
+        border-radius: 0;
+    }
+  
+    .navbar-nav {
+        flex-direction: column;   
+        align-items: center;
+        padding: 10px 0;
+    }
+  
+    .navbar-nav .nav-link {
+        margin: 5px 0;            
+        font-size: 14px;          
+    }
+  
+    .btn {
+        width: 100%;              
+        margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;   
+        padding: 10px;
+        border-radius: 20px;
+  
+    }
+  }
+  
+  
+  
+  
+    @media (max-width: 1024px) {
+      .content {
+        height: 600px;
+        background-position: center;
+      }
+      .row h3, .row h2 {
+        font-size: 1.5rem;
+      }
+      .row p {
+        font-size: 1rem;
+      }
+      button img {
+        width: 100px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      
+      .content {
+        height: 500px;
+        background-position: center;
+        padding: 15px;
+      }
+      .row h3, .row h2 {
+        font-size: 1.2rem;
+      }
+      .row p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      button img {
+        width: 80px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .content {
+        /* height: 400px; */
+        padding: 10px;
+      }
+      .row h3, .row h2 {
+        font-size: 1rem;
+      }
+      .row p {
+        font-size: 0.8rem;
+      }
+      button img {
+        width: 60px;
+      }
+     
+    }
+    @media (max-width:425px){
+     .content h3{
+      /* width: 100px; */
+      font-size: 5px;
+      margin-top: -200px;
+      background-color: brown;
+     }
+    }
+  
+  @media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+    
+    .col {
+        flex-basis: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+  
+    .col {
+        flex-basis: 100%;
+    }
+  }
+
+    
